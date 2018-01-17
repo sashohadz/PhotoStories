@@ -96,7 +96,6 @@
  * This block is used when you define a callback.
  */
 typedef void (^LeanplumInboxChangedBlock)(void);
-typedef void (^LeanplumInboxSyncedBlock)(BOOL success);
 
 @interface LPInbox : NSObject
 
@@ -150,13 +149,6 @@ typedef void (^LeanplumInboxSyncedBlock)(BOOL success);
  * that can update in realtime.
  */
 - (void)onChanged:(LeanplumInboxChangedBlock)block;
-
-/**
- * Block to call when forceContentUpdate was called.
- * Returns true if syncing was successful.
- * Note: use onChanged: for UI.
- */
-- (void)onForceContentUpdate:(LeanplumInboxSyncedBlock)block;
 
 /**
  @{
