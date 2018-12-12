@@ -11,7 +11,7 @@ import UIKit
     import AdSupport
 #endif
 import Leanplum
-import LeanplumUIEditor
+
 //TO DO:
 fileprivate let viewActionIdentifier = "VIEW_IDENTIFIER"
 fileprivate let newsCategoryIdentifier = "NEWS_CATEGORY"
@@ -21,26 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     var window: UIWindow?
     
-    var welcomeMessage = LPVar.define("welcomeMessage",with: "Welcome to Leanplum!")
+    var welcomeMessage = LPVar.define("sashoTestVar",with: "Welcome to Leanplum!")
     var profileImage = LPVar.define("loginImage", withFile: "plum")
-    let myArrayVar = LPVar.define("myArrayVarName",with: ["Sasho1","Sasho2"])
-    var lpEventAttributeArr : LPVar!
-    var myDictionaryVar = LPVar.define("myDictionaryVarName", with: ["1" : "Sasho1","2" : "Sasho2"])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         UNUserNotificationCenter.current().delegate = self
         
-        let appId = "app_Ct6WcCuzwLPZwDGwLFg3bc8A0VxKEEMbLuXBr6PvNK4"
-        let prodkey = "prod_HySDSeoN8GshFmTRFlnThakIth5M15C6Hnu2qJv70iQ"
-        let devKey = "dev_WfRQHaMVNkKSNW015fgejFyborCNXdwAQrsC2LEaGPI"
-   
+        let appId = "app_dHd3SBGm3lRS4YsQf3UDC1r5NdZjfsW7GpW0KMcx0HU"
+        let prodkey = "prod_qGy3LNPI9iQRpD91fzHbbVqV0izYDVUaeJgkOhh2Fsk"
+        let devKey = "dev_JmC5uop607VcQaWVcgagZsQOaNcXArHnxVWMSstJzAo"
+        
         #if DEBUG
             Leanplum.setAppId(appId, withDevelopmentKey:devKey)
         #else
             Leanplum.setAppId(appId, withProductionKey:prodkey)
         #endif
-
+        
         Leanplum.setVerboseLoggingInDevelopmentMode(true)
         
         Leanplum.start()
@@ -49,7 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         Leanplum.onStartResponse{ (success:Bool) in
             print("Got a Start call response Success: \(success)")
-            
+            let oddNumbers = [1, 3, 5, 7, 9, 11, 13, 15]
+            Leanplum.setUserAttributes(["oddNumbers" : oddNumbers])
         }
         return true
     }
@@ -58,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let tokenParts = deviceToken.map { data -> String in
             return String(format: "%02.2hhx", data)
         }
-        
+
         let token = tokenParts.joined()
         print("Device Token: \(token)")
     }
@@ -67,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     {
         print("Failed to register: \(error)")
     }
-
+    
     func configureUserNotifications(){
         
         if #available(iOS 10.0, *) {
@@ -113,8 +111,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             UIApplication.shared.registerForRemoteNotifications()
         }
     }
+ 
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("My own did receive remote notification \(userInfo)")
+        completionHandler(.newData)
+    }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("did receive remote notification \(userInfo)")
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("did receive response \(response)")
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("will present")
+        completionHandler(.alert);
     }
 }

@@ -24,6 +24,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         self.passwordTextField.delegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        Leanplum.advance(to: "RegisterScreenState", withParameters: ["RegisterStateParamOne":"RegisteredOne"])
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Leanplum.advance(to: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

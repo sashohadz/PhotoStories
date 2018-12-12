@@ -10,7 +10,7 @@ import UIKit
 import Leanplum
 
 class MessagesTableViewController: UITableViewController {
-
+    // TO UPLDATE - OUTDATED CODE
     var inboxMessages = [LPInboxMessage]()
     
     override func viewDidLoad() {
@@ -37,9 +37,9 @@ class MessagesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let row = indexPath.row
         let message: LPInboxMessage = self.inboxMessages[row]
-        if (!message.isRead()) {
-            cell.setHighlighted(true, animated: true)
-        }
+//        if (!message.isRead) {
+//            cell.setHighlighted(true, animated: true)
+//        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,7 +62,7 @@ class MessagesTableViewController: UITableViewController {
              cell.imageView?.image = UIImage(contentsOfFile: imageFilePath)
         }
         
-        print("Showing Inbox message with: id##instanceId \(message.messageId())")
+//        print("Showing Inbox message with: id##instanceId \(message.messageId())")
         return cell
     }
     
@@ -87,7 +87,7 @@ class MessagesTableViewController: UITableViewController {
         let alertController = UIAlertController(title: title, message: text, preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction(title: "Got it!", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
             inboxMessageId.read()
-            print("OK, message with id \(inboxMessageId.messageId()) is now marked as read")
+//            print("OK, message with id \(inboxMessageId.minboxessageId()) is now marked as read")
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)

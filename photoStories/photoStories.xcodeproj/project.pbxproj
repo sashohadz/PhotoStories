@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2235222C70FF5AFA560BA00D /* Pods_photoStories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E6AC1D9BEEEF1520B5F85 /* Pods_photoStories.framework */; };
 		A5042EDA1EAE6871001AC72B /* gas.png in Resources */ = {isa = PBXBuildFile; fileRef = A5042ED51EAE6871001AC72B /* gas.png */; };
+		A558E3EC21341D3100669351 /* photoStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558E3EB21341D3100669351 /* photoStoriesTests.swift */; };
 		A55E51941E7C324600E648F9 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E51931E7C324600E648F9 /* MessagesTableViewController.swift */; };
 		A57D9C9E1EFC5ED700AEDF36 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D9C9D1EFC5ED700AEDF36 /* NotificationService.swift */; };
 		A57D9CA21EFC5ED700AEDF36 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A57D9C9B1EFC5ED700AEDF36 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -33,9 +33,17 @@
 		A5D708891EF9519300DDE9F2 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D708881EF9519300DDE9F2 /* MainNavController.swift */; };
 		A5D7088B1EF95EF200DDE9F2 /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7088A1EF95EF200DDE9F2 /* LoginNavController.swift */; };
 		A5FE7B5A1E5CD3A100253B8A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FE7B591E5CD3A100253B8A /* DetailViewController.swift */; };
+		EB1617B8ADA38129A61D3BB5 /* Pods_photoStories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12876C846375493D3F6856F /* Pods_photoStories.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A558E3EE21341D3100669351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CC3B491E5C320B00F53146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CC3B501E5C320B00F53146;
+			remoteInfo = photoStories;
+		};
 		A57D9CA01EFC5ED700AEDF36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5CC3B491E5C320B00F53146 /* Project object */;
@@ -60,10 +68,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		834E6AC1D9BEEEF1520B5F85 /* Pods_photoStories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoStories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDD77EC486BCEBE99E7B603 /* Pods-photoStories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoStories.release.xcconfig"; path = "Pods/Target Support Files/Pods-photoStories/Pods-photoStories.release.xcconfig"; sourceTree = "<group>"; };
 		A5042ED51EAE6871001AC72B /* gas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gas.png; sourceTree = "<group>"; };
 		A50544D11EFCF2C300C30271 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		A558E3E921341D3100669351 /* photoStoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photoStoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A558E3EB21341D3100669351 /* photoStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoStoriesTests.swift; sourceTree = "<group>"; };
+		A558E3ED21341D3100669351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55E51931E7C324600E648F9 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		A57D9C9B1EFC5ED700AEDF36 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D9C9D1EFC5ED700AEDF36 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -93,9 +103,17 @@
 		A5E627221E8A7611001CCFDF /* photoStories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = photoStories.entitlements; sourceTree = "<group>"; };
 		A5FE7B591E5CD3A100253B8A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACB91358FC4C8680D2B73C1B /* Pods-photoStories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoStories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-photoStories/Pods-photoStories.debug.xcconfig"; sourceTree = "<group>"; };
+		B12876C846375493D3F6856F /* Pods_photoStories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoStories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A558E3E621341D3100669351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57D9C981EFC5ED700AEDF36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2235222C70FF5AFA560BA00D /* Pods_photoStories.framework in Frameworks */,
+				EB1617B8ADA38129A61D3BB5 /* Pods_photoStories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,9 +144,18 @@
 		89159C8596B8EB654EA0BCD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				834E6AC1D9BEEEF1520B5F85 /* Pods_photoStories.framework */,
+				B12876C846375493D3F6856F /* Pods_photoStories.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A558E3EA21341D3100669351 /* photoStoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A558E3EB21341D3100669351 /* photoStoriesTests.swift */,
+				A558E3ED21341D3100669351 /* Info.plist */,
+			);
+			path = photoStoriesTests;
 			sourceTree = "<group>";
 		};
 		A57D9C9C1EFC5ED700AEDF36 /* NotificationService */ = {
@@ -146,6 +173,7 @@
 			children = (
 				A5CC3B531E5C320C00F53146 /* photoStories */,
 				A57D9C9C1EFC5ED700AEDF36 /* NotificationService */,
+				A558E3EA21341D3100669351 /* photoStoriesTests */,
 				A5CC3B521E5C320C00F53146 /* Products */,
 				754B254C642A6172BBA40F18 /* Pods */,
 				89159C8596B8EB654EA0BCD1 /* Frameworks */,
@@ -157,6 +185,7 @@
 			children = (
 				A5CC3B511E5C320C00F53146 /* photoStories.app */,
 				A57D9C9B1EFC5ED700AEDF36 /* NotificationService.appex */,
+				A558E3E921341D3100669351 /* photoStoriesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +233,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A558E3E821341D3100669351 /* photoStoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A558E3F221341D3100669351 /* Build configuration list for PBXNativeTarget "photoStoriesTests" */;
+			buildPhases = (
+				A558E3E521341D3100669351 /* Sources */,
+				A558E3E621341D3100669351 /* Frameworks */,
+				A558E3E721341D3100669351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A558E3EF21341D3100669351 /* PBXTargetDependency */,
+			);
+			name = photoStoriesTests;
+			productName = photoStoriesTests;
+			productReference = A558E3E921341D3100669351 /* photoStoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A57D9C9A1EFC5ED700AEDF36 /* NotificationService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A57D9CA51EFC5ED700AEDF36 /* Build configuration list for PBXNativeTarget "NotificationService" */;
@@ -230,7 +277,6 @@
 				A5CC3B4E1E5C320B00F53146 /* Frameworks */,
 				A5CC3B4F1E5C320B00F53146 /* Resources */,
 				765B751BF186D92462D6D99E /* [CP] Embed Pods Frameworks */,
-				3916FB809BA38FF42325EFED /* [CP] Copy Pods Resources */,
 				A57D9CA61EFC5ED700AEDF36 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -249,10 +295,16 @@
 		A5CC3B491E5C320B00F53146 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Sasho Hadzhiev";
 				TargetAttributes = {
+					A558E3E821341D3100669351 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 28ND8Z4YSN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A5CC3B501E5C320B00F53146;
+					};
 					A57D9C9A1EFC5ED700AEDF36 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4XLWYATZ5P;
@@ -296,11 +348,19 @@
 			targets = (
 				A5CC3B501E5C320B00F53146 /* photoStories */,
 				A57D9C9A1EFC5ED700AEDF36 /* NotificationService */,
+				A558E3E821341D3100669351 /* photoStoriesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A558E3E721341D3100669351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57D9C991EFC5ED700AEDF36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,21 +389,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3916FB809BA38FF42325EFED /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photoStories/Pods-photoStories-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		48D4171D665A05200E1CB883 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,13 +414,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-photoStories/Pods-photoStories-frameworks.sh",
-				"${PODS_ROOT}/Leanplum-iOS-SDK/Leanplum.framework",
-				"${PODS_ROOT}/Leanplum-iOS-UIEditor/LeanplumUIEditor.framework",
+				"${BUILT_PRODUCTS_DIR}/Leanplum-iOS-SDK/Leanplum.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Leanplum.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanplumUIEditor.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,6 +428,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A558E3E521341D3100669351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A558E3EC21341D3100669351 /* photoStoriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57D9C971EFC5ED700AEDF36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +466,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A558E3EF21341D3100669351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CC3B501E5C320B00F53146 /* photoStories */;
+			targetProxy = A558E3EE21341D3100669351 /* PBXContainerItemProxy */;
+		};
 		A57D9CA11EFC5ED700AEDF36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A57D9C9A1EFC5ED700AEDF36 /* NotificationService */;
@@ -442,6 +498,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A558E3F021341D3100669351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28ND8Z4YSN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = photoStoriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCourse.photoStoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoStories.app/photoStories";
+			};
+			name = Debug;
+		};
+		A558E3F121341D3100669351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28ND8Z4YSN;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = photoStoriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCourse.photoStoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoStories.app/photoStories";
+			};
+			name = Release;
+		};
 		A57D9CA31EFC5ED700AEDF36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -578,6 +696,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = photoStories/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftCourseSasho.photoStories;
@@ -598,6 +717,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = photoStories/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftCourseSasho.photoStories;
@@ -611,6 +731,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A558E3F221341D3100669351 /* Build configuration list for PBXNativeTarget "photoStoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A558E3F021341D3100669351 /* Debug */,
+				A558E3F121341D3100669351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A57D9CA51EFC5ED700AEDF36 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
